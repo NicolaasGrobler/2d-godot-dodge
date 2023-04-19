@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://c1fctf042bmbg"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_c6lmx"]
-[ext_resource type="PackedScene" uid="uid://bt2b3b1ww6a1m" path="res://Player.tscn" id="1_ltckq"]
+[ext_resource type="PackedScene" uid="uid://bt2b3b1ww6a1m" path="res://player.tscn" id="1_ltckq"]
 [ext_resource type="PackedScene" uid="uid://dve0hwunwsttq" path="res://Mob.tscn" id="2_s735t"]
 [ext_resource type="PackedScene" uid="uid://bsbvocw4mdf60" path="res://Hud.tscn" id="4_wv88c"]
 [ext_resource type="AudioStream" uid="uid://54agfe7f80ge" path="res://art/House In a Forest Loop.ogg" id="5_2rrvd"]
@@ -26,6 +26,7 @@ grow_vertical = 2
 color = Color(0.14902, 0.105882, 0.0745098, 1)
 
 [node name="Player" parent="." instance=ExtResource("1_ltckq")]
+position = Vector2(240, 450)
 
 [node name="MobTimer" type="Timer" parent="."]
 wait_time = 0.5
